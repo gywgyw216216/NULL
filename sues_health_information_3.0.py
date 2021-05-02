@@ -6,6 +6,7 @@ from time import strftime, sleep
 from datetime import datetime, timedelta
 from random import uniform
 from requests import get, Session, adapters
+from requests.packages.urllib3 import disable_warnings
 from bs4 import BeautifulSoup
 from sys import argv
 from traceback import format_exc
@@ -198,7 +199,7 @@ def login_by_webvpn(username, password):
                       "like Gecko) Chrome/87.0.4280.141 Safari/537.36 Edg/87.0.664.75",
         "origin": "https://webvpn.sues.edu.cn"
     })
-    result1 = session.get("https://webvpn.sues.edu.cn/")
+    result1 = session.get("https://webvpn.sues.edu.cn/", verify=False)
     soup1 = BeautifulSoup(result1.content, "lxml")
     cas_url = soup1.find("a")["href"]
     result2 = session.get(cas_url)
@@ -277,6 +278,8 @@ def report_by_webvpn(username, password):
 
 
 if __name__ == '__main__':
+    disable_warnings()
+    
     try:
         person = {"CASUsername": argv[1], "CASPassword": argv[2]}
         
