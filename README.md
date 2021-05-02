@@ -9,6 +9,6 @@
 
 2. SUES Health Information Report 2.0: With WebVPN by using GitHub Action. 
 
-3. SUES Health Information Report 3.0: Switch use WebVPN or not automatically by using GitHub Action. 
+3. SUES Health Information Report 3.0: Switch use WebVPN or not automatically by using GitHub Action. Besides, don't verify SSL. 
 
 4. To be continue......
