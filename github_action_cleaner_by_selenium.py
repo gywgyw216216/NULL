@@ -21,7 +21,7 @@ WORKFLOWS = 0  # Circles Number. (Workflows Number)
 
 
 
-def print_traceback_error(exception):
+def print_traceback_error(exception: Exception):
     error = format_exc()
     error_time = strftime("%Y-%m-%d %H:%M:%S")
     command_line_entry = " ".join(argv)
@@ -34,7 +34,7 @@ def print_traceback_error(exception):
 
 
 
-def login_github(browser):
+def login_github(browser: webdriver):
     browser.find_element_by_name("login").send_keys(USERNAME)
     sleep(1)
     browser.find_element_by_name("password").send_keys(PASSWORD)
@@ -45,8 +45,8 @@ def login_github(browser):
 
 
 
-def delete_actions(browser,
-                   number):
+def delete_actions(browser: webdriver,
+                   number: int) -> bool:
     browser.find_element_by_class_name("timeline-comment-action.btn-link").click()
     sleep(1)
     browser.find_element_by_class_name("dropdown-item.btn-link.menu-item-danger ").click()
