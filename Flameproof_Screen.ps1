@@ -4,6 +4,6 @@ $shell = New-Object -com "Wscript.Shell"
 
 while($True)
 {
-    Start-Sleep -Seconds 255
+    Start-Sleep -Seconds 295
     $shell.sendkeys(" ")
 }
