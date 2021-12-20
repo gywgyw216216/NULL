@@ -8,6 +8,6 @@
 
 2. Flameproof_Screen.ps1;
 
-### Notice: It Can Make Your Screen Work Always. Please Run it by Windows Powershell. The Time is 300 Seconds. 
+### Notice: It Can Make Your Screen Work Always. It Will Press Space Key Every 295(300) Seconds(5 Minutes). Please Run it by Windows Powershell. 
 
 3. To be continue......
