@@ -8,6 +8,6 @@
 
 2. Flameproof_Screen.ps1;
 
-### Notice: It Can Make Your Screen Work Always. 
+### Notice: It Can Make Your Screen Work Always. Please Run it by Windows Powershell. The Time is 300 Seconds. 
 
 3. To be continue......
