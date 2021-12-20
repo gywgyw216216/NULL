@@ -6,4 +6,8 @@
 
 ### Notice: Annotations are in Script. It Might Be Useful for OCDs. Sometimes, though, Doesn't Work so Well......   
 
-2. To be continue......
+2. Flameproof_Screen.ps1;
+
+### Notice: It Can Make Your Screen Work Always. 
+
+3. To be continue......
