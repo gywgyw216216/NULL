@@ -75,7 +75,7 @@ def main():
         browser.get(URL_GITHUB_ACTION)
 
         if delete_actions(browser,
-                          WORKFLOWS):
+                          WORKFLOWS - i):
             i += 1
 
     browser.close()
