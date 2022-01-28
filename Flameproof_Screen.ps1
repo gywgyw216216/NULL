@@ -31,6 +31,10 @@ Write-Output("`n----------------------------------------------------------------
 
 $shell = New-Object -ComObject "Wscript.Shell"
 $count = 1
+$total_sleep_seconds = 0
+$average_sleep_seconds = 0
+
+
 
 while ($True) {
     $shell.sendkeys("+")
@@ -38,10 +42,13 @@ while ($True) {
 
     Write-Output(">>> " + $time + "   Press [Shift] " + $count + " Times. ")
 
+    $sleep_seconds = Get-Random -Minimum 0.0 -Maximum 300
+    $total_sleep_seconds += $sleep_seconds
+    $average_sleep_seconds = $total_sleep_seconds / $count
     $count++
-    $sleep = Get-Random -Minimum 0.0 -Maximum 300
 
-    Write-Output(">>> Sleep " + $sleep + " Seconds. `n")
+    Write-Output(">>> Sleep " + $sleep_seconds + " Seconds. ")
+    Write-Output(">>> Average Sleep " + $average_sleep_seconds + " Seconds. `n")
 
-    Start-Sleep $sleep
+    Start-Sleep $sleep_seconds
 }
