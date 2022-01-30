@@ -10,4 +10,12 @@
 
 ### Notice: It Can Make Your Screen Work Always. It Will Press Shift Key Within 300 Seconds(5 Minutes) Every Time. Please Run it by Windows PowerShell. 
 
-3. To be continue......
+3. tools.py;
+
+### Notice: Annotations are in Script. I Have Rewrited Output print() Function. You Can Use It to Print Logs in Console. 
+
+4. log.py;
+
+### Notice: Annotations are in Script. I Have Encapsulated Module logging. You Can Easy to Use it to Print Logs. 
+
+5. To be continue...... 
