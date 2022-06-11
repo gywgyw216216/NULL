@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from logging import (getLogger,
-                     DEBUG,
-                     INFO,
-                     WARNING,
-                     ERROR,
+from logging import (BASIC_FORMAT,
                      CRITICAL,
-                     BASIC_FORMAT,
+                     DEBUG,
+                     ERROR,
+                     FileHandler,
                      Formatter,
+                     INFO,
                      StreamHandler,
-                     FileHandler, )
+                     WARNING,
+                     getLogger, )
 from typing import Union
 
 
@@ -175,3 +175,14 @@ class Log(object):
 
         self.__logger.exception(string,
                                 exc_info=True)
+
+
+
+if __name__ == '__main__':
+    logger = Log(__name__,
+                 "debug",
+                 "%(asctime)s %(levelname)s-%(name)s: %(message)s")
+    logger.get_console_handle()
+    logger.get_file_handle()
+    logger.add_handle()
+    logger.print_log("Hello World! ")
