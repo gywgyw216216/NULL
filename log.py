@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+log.py
+"""
+
 from logging import (BASIC_FORMAT,
                      CRITICAL,
                      DEBUG,
